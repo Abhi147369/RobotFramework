@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.7 on win32)" generated="20230814 17:52:32.219" rpa="false" schemaversion="4">
+<suite id="s1" name="Test ClickAboutOption" source="C:\Users\ajink\PycharmProjects\RobotFramewokProject\TestCases\Test_ClickAboutOption.robot">
+<test id="s1-t1" name="Carrers Page Test" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230814 17:52:32.398" level="INFO">Opening browser 'chrome' to base url 'https://www.cctech.co.in/'.</msg>
+<status status="PASS" starttime="20230814 17:52:32.397" endtime="20230814 17:52:35.465"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230814 17:52:35.466" endtime="20230814 17:52:35.587"/>
+</kw>
+<kw name="ClickAboutOption" library="ClickAboutOptionKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${About_Option}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230814 17:52:35.589" level="INFO">Clicking element '//span[normalize-space()='About Us']'.</msg>
+<status status="PASS" starttime="20230814 17:52:35.588" endtime="20230814 17:52:36.160"/>
+</kw>
+<status status="PASS" starttime="20230814 17:52:35.588" endtime="20230814 17:52:36.160"/>
+</kw>
+<kw name="VerifyAboutPageShouldOpen" library="ClickAboutOptionKeywords">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>About Us | CCTech</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230814 17:52:36.172" level="INFO">Page title is 'About Us | CCTech'.</msg>
+<status status="PASS" starttime="20230814 17:52:36.161" endtime="20230814 17:52:36.173"/>
+</kw>
+<status status="PASS" starttime="20230814 17:52:36.160" endtime="20230814 17:52:36.173"/>
+</kw>
+<status status="PASS" starttime="20230814 17:52:32.397" endtime="20230814 17:52:36.173"/>
+</test>
+<status status="PASS" starttime="20230814 17:52:32.220" endtime="20230814 17:52:36.175"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test ClickAboutOption">Test ClickAboutOption</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
